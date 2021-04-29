@@ -21,7 +21,6 @@ gapfind_re = re.compile("([$].*?[$])")
 @dataclass_json
 @dataclass
 class GapFillQuestion:
-
     gap_span: Tuple[int, int]
     answer: int
     distractors: List[AnyStr]
