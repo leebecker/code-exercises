@@ -42,15 +42,15 @@ class Item:
         for i, gap in enumerate(gap_matches):
             gap_span = gap.span()
             answer = gap.group()
-            distractors = []
+            distractor_indices = []
 
-            while len(distractors) < min(len(gap_matches), 4):
+            while len(distractor_indices) < min(len(gap_matches), 4):
                 idx = random.randint(0, len(gap_matches)-1)
-                if idx != i and idx not in distractors:
-                    distractors.append(idx)
+                if idx != i and idx not in distractor_indices:
+                    distractor_indices.append(idx)
 
-            new_distractors = [gap_matches[i].group() for i in distractors]
-            questions.append(GapFillQuestions(gap_span, answer, new_distractors))
+            distractors = [gap_matches[i].group() for i in distractor_indices]
+            questions.append(GapFillQuestions(gap_span, answer, distractors))
         return questions
 
     @property
