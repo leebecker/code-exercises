@@ -1,9 +1,12 @@
 from dataclasses import dataclass, field
+from dataclasses_json import dataclass_json
 from io import TextIOBase
-from typing import AnyStr, List, Iterator, Optional
+from typing import AnyStr, List, Iterator, Optional, Tuple
 
 import argparse
 import json
+import random
+import re
 import sys
 
 
@@ -12,13 +15,43 @@ QUESTION_PREFIX = "Question: "
 ANSWER_PREFIX = "- "
 ITEM_TERMINAL_LINE = "###"
 
+gapfind_re = re.compile("([$].*?[$])")
 
+
+@dataclass_json
+@dataclass
+class GapFillQuestions:
+
+    gap_span: Tuple[int, int]
+    answer: int
+    distractors: List[AnyStr]
+
+
+@dataclass_json
 @dataclass
 class Item:
 
     case: AnyStr = None
     question: AnyStr = None
     answers: List[AnyStr] = field(default_factory=list)
+    gap_fill_questions: List[GapFillQuestions] = field(default_factory=list)
+
+    def generate_questions(self):
+        questions = []
+        gap_matches = [_ for _ in gapfind_re.finditer(self.case)]
+        for i, gap in enumerate(gap_matches):
+            gap_span = gap.span()
+            answer = gap.group()
+            distractors = []
+
+            while len(distractors) < min(len(gap_matches), 4):
+                idx = random.randint(0, len(gap_matches)-1)
+                if idx != i and idx not in distractors:
+                    distractors.append(idx)
+
+            new_distractors = [gap_matches[i].group() for i in distractors]
+            questions.append(GapFillQuestions(gap_span, answer, new_distractors))
+        return questions
 
     @property
     def is_empty(self) -> bool:
@@ -52,6 +85,7 @@ class Item:
             # if no properties set on the item, return None
             return None
         else:
+            item.gap_fill_questions = item.generate_questions()
             return item
 
     @classmethod
@@ -65,9 +99,6 @@ class Item:
                 yield item
             else:
                 return
-
-    def to_dict(self):
-        return self.__dict__
 
 
 def main():
