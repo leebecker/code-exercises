@@ -1,0 +1,33 @@
+Case: The nurse is caring for a $62$-year-old client who has $pneumonia$. Client has history of $chronic obstructive pulmonary disease$. Physical examination reveals client has frequent, unproductive $cough$; $suctioned thick$, $purulent sputum$; $wheezes bilaterally$ on inspiration and expiration; $shortness of breath$ with exertion; $digital clubbing$ and $increased anteroposterior chest diameter$. Vital signs: $101.9$F, P$118$, BP$122/84$, pulse oximetry reading $93% on oxygen$ at 2 L/min via nasal cannula.
+Question: Select which of the following findings is a sign of a potentially worsening condition?
+- Digital clubbing
+- Oxygen saturation 93% on room temperature
+- Frequent, productive cough
+- Shortness of breath at rest
+- Increased anteroposterior chest diameter
+###
+Case: The nurse is caring for a $28$-year-old client who is $gravida 4$, $para 2$, is at $40 weeks gestation$ and is in active labor. The client is receiving $titrated intravenous oxytocin$ for augmentation of labor via the secondary line on an intravenous pump. The client is also receiving maintenance $intravenous fluid$ of lactated $Ringer's solution$ at $125 mL/hr$ via an intravenous pump. The client has a cervical dilatation of $5 cm$ and a cervical effacement of $100%$ with a fetal station of 0 in vertex presentation. Intact amniotic membranes are noted. Category I tracing of fetal heart rate (FHR) of $150$bpm, with moderate variability, and $3 accelerations of 15$bpm over the baseline lasting 15 seconds via external ultrasound. The client is experiencing $contractions every 5 minutes$, which are lasting $70 seconds$ with $moderate intensity$ via tocotransducer. Vital Signs: HR$88$, BP$115/78$, RR$15$, T$100.4$F. Has a continuous $epidural infusion$ of $0.25% bupivacaine$ with $fentanyl$ running at $10 mL/hr$. Pain $0/10$ at this time. Client states, 'I had postpartum hemorrhage with my last vaginal delivery and I required a blood transfusion.' Medical history of $hypothyroidism$ and $asthma$. The nurse decides to perform $intrauterine resuscitation$.
+Question: Select the potential steps the nurse should take to perform intrauterine resuscitation?
+- Place the client in the left lateral position.
+- Increase the infusion of titrated intravenous oxytocin.
+- Administer 10 L of oxygen via nonrebreather mask.
+- Request that the obstetrician artificially rupture the client's membranes.
+- Check the client's cervix for changes in dilatation.
+###
+Case: The nurse is caring for a $78$-year-old female client in the Emergency Department (ED). Client was brought to the ED by her daughter due to increased $shortness of breath$ this morning. The daughter reports that the client has been $running a fever$ for the past $few days$ and has started to $cough$ up $greenish colored mucous$ and to complain of 'soreness' throughout her body. The client was recently hospitalized for issues with $atrial fibrillation$ 6 days ago. The client has a history of $hypertension$. Vital signs: $101.1$F, P$92$, RR$22$, BP$152/86$, pulse oximetry reading $94% on oxygen$ at $2$L/min via nasal cannula. Upon assessment, the client's breathing appears $slightly labored$, and course crackles are noted in bilateral lung bases. Skin $slightly cool$ to touch and $pale pink$ in tone, pulse $+3$ and $irregular$. Capillary refill is $3 seconds$. Client is $alert$ and oriented to person, place, and time. The client's daughter states, 'Sometimes it seems like my mother is confused.'
+Question: Select which of the following findings are a sign of worsening conditions?
+- Lung sounds
+- Capillary refill
+- Client orientation
+- Radial pulse characteristics
+- Characteristics of the cough
+###
+Case: The nurse is caring for a $17$-year-old male client who reports a recent injury to the $left thoracic cage$. Client reports injuring his $left ribs$ after being struck by a $mechanically pitched baseball$ in a batting cage last week. He has $significant bruising$ and feels $lightheaded$. He also reports having some $intermittent pain$ in the $left shoulder$. He denies any $shortness of breath$, but has some $discomfort$ in the $left lower chest$ when taking a deep breath. He reports feeling $abdominal fullness$ and is occasionally $nauseous$. Patient has no significant past medical history. His surgical history includes an $orthoscopic repair$ to the $left shoulder$ for a $torn rotator cuff$ last year. He has not felt well enough to attend baseball practice since the injury. Vital signs: BP$90/50$, P$116$, RR$24$, T$97.8$F. Patient appears pale and slightly $diaphoretic$. Large amount of $bruising$ noted along the $left torso$ and over the $left upper quadrant (LUQ)$ of the abdomen. Patient is guarded and there is $tenderness upon palpation$ and $dullness to percussion$ over the abdomen. Slightly $diminished breath sounds$ on the left, $productive cough$ noted. Electrocardiogram (ECG) shows $normal sinus rhythm$.
+Question: Select which assessment findings require immediate follow-up?
+- BP 90/50, P 116, RR 24
+- Intermittent left shoulder pain
+- ECG showing normal sinus rhythm
+- Slightly diminished breath sounds on the left
+- Tenderness upon palpation and dullness to percussion over the abdomen
+###
+
