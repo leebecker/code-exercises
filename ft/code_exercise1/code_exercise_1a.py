@@ -20,7 +20,7 @@ gapfind_re = re.compile("([$].*?[$])")
 
 @dataclass_json
 @dataclass
-class GapFillQuestions:
+class GapFillQuestion:
 
     gap_span: Tuple[int, int]
     answer: int
@@ -34,7 +34,7 @@ class Item:
     case: AnyStr = None
     question: AnyStr = None
     answers: List[AnyStr] = field(default_factory=list)
-    gap_fill_questions: List[GapFillQuestions] = field(default_factory=list)
+    gap_fill_questions: List[GapFillQuestion] = field(default_factory=list)
 
     def generate_questions(self):
         questions = []
@@ -50,7 +50,7 @@ class Item:
                     distractor_indices.append(idx)
 
             distractors = [gap_matches[i].group() for i in distractor_indices]
-            questions.append(GapFillQuestions(gap_span, answer, distractors))
+            questions.append(GapFillQuestion(gap_span, answer, distractors))
         return questions
 
     @property
